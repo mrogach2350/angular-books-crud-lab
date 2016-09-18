@@ -1,4 +1,4 @@
-.header {
+.pageHeader {
   text-align: center;
   background-image: url(images/bookshelf.png);
   color: rgba(200, 200, 200, 1);
@@ -7,4 +7,14 @@
 h1 {
   line-height: 200px;
   font-weight: 900;
+}
+img {
+  max-height: 100px;
+  margin: 5px;
+}
+.card {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  height: 110px;
 }
