@@ -1,3 +1,4 @@
+console.log('Sanity Check!');
 angular
   .module('booksApp', ['ngRoute'])
   .config(config)
@@ -6,12 +7,12 @@ angular
   function config( $routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: '/templates/books/index',
+        templateUrl: 'templates/books/index',
         controllerAs: 'booksIndexCtrl',
         controller: 'BooksIndexController'
       })
       .when('/books/:id', {
-        templateUrl: '/templates/books/show',
+        templateUrl: 'templates/books/show',
         controllerAs: 'booksShowCtrl',
         controller: 'BooksShowController'
       });
