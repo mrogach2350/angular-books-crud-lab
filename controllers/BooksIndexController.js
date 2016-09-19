@@ -12,7 +12,6 @@ angular
       method: 'GET',
       url: 'https://super-crud.herokuapp.com/books'
     }).then(function successCallback(response){
-      console.log('found books', response.data);
       vm.books = response.data.books;
     }, function errorCallback(response){
       console.log('Shit hit the fan, homie', response);
