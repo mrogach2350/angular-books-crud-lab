@@ -5,7 +5,7 @@
       Author: {{booksShowCtrl.book.author}} <br>
       Release Date: {{booksShowCtrl.book.releaseDate}}
     </p>
-    <button class="btn btn-danger col-md-4" ng-click='BooksShowController.deleteBook(book)'>Delete Book</button>
+    <button class="btn btn-danger col-md-4" ng-click='booksShowCtrl.deleteBook(booksShowCtrl.book._id)'>Delete Book</button>
     <button class="btn btn-info col-md-4">Edit Book</button>
   </div>
   <div class="col-md-4">
