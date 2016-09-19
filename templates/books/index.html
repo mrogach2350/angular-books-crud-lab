@@ -1,0 +1,16 @@
+<div class="row col-md-11 col-md-offset-1">
+  <div ng-repeat='book in booksIndexCtrl.books'>
+    <div class="card col-md-5">
+      <div class="col-md-8">
+        <h4><a href="/books/{{book._id}}">{{book.title}}</a></h4>
+        <ul>
+          <li>Author: {{book.author}}</li>
+          <li>Release Date: {{book.releaseDate}}</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <img src="{{book.image}}" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
